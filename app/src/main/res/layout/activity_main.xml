@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/chat"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        />
+    <com.nex3z.notificationbadge.NotificationBadge
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/badge"
+        app:nbMaxTextLength="2"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginStart="15dp">
+
+    </com.nex3z.notificationbadge.NotificationBadge>
+    
+    <Button
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+        android:text="Simple Notification"
+        android:layout_gravity="center"
+        android:onClick="simpleNotification"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Big Text Notification"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="largeTextNotification"/>
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Inbox Style Notification"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="inboxNotification"/>
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Big Picture Notification"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="bigPictureNotification"/>
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Badge Notification"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="badgeNotification"/>
+
+
+
+
+</LinearLayout>
